@@ -1,0 +1,21 @@
+---
+layout: base
+title: Cookbooks and Herbals
+---
+<title>Cookbooks and Herbals</title>
+<h1>Cookbooks and Herbals</h1>
+<ul>
+  <table id="collection">
+    <colgroup>
+      <col class="col1">
+      <col class="col2">
+    </colgroup>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+    </tr>
+      {% for work in site.herbals %}
+        <tr><td class="title"><a href="{{site.baseurl}}{{work.url}}">{{ work.title }}</a></td><td>{{work.pubDate}}</td></tr>
+      {% endfor %}
+    </table>
+  </ul>

@@ -1,0 +1,18 @@
+---
+layout: base
+---
+<title>Search</title>
+<h1>Search</h1>
+<form id="site_search">
+    <input id="search" type="text"/>
+</form>
+
+<div id="results"></div>
+<ul id="search_results"></ul>
+
+{% for text in site.data.meta.files %}
+<li>{{text.title}}</li>
+{%endfor%}
+
+<script src="{{ site.baseurl }}/assets/js/elasticlunr.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/search.js"></script>

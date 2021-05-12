@@ -1,0 +1,39 @@
+---
+layout: base
+---
+<div id="TEI">
+</div>
+<script src="{{ site.baseurl }}/assets/js/CETEI.js"></script>
+<script>
+function marking(match){
+    return "<mark>" + match +"</mark>";
+}
+function highlight(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const query = urlParams.get('q')
+    const queryReg = "\w*" + query + "\w*"
+    el = document.getElementById("TEI")
+    text = el.innerHTML
+    const re = new RegExp(queryReg, "ig")
+    console.log(re)
+    marked = text.replace(re, marking);
+    el.innerHTML = marked;
+}
+  var CETEIcean = new CETEI();
+  CETEIcean.getHTML5("{{ site.baseurl }}/TEI/{{page.filename}}.xml", function (data) {
+    //parse out data variable
+    document.getElementById("TEI").innerHTML = "";
+    document.getElementById("TEI").appendChild(data);
+    CETEIcean.addStyle(document, data);
+    highlight();
+  });
+
+    // Alternatively, use then()
+    // (new CETEI).getHTML5('testTEI.xml').then(function(data){
+    //   document.getElementById("TEI").appendChild(data);
+    // });
+
+</script>
+<script src="https://hypothes.is/embed.js"></script>
+<!--<script src="{{ site.baseurl }}/assets/js/highlight.js"></script>-->

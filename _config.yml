@@ -1,0 +1,14 @@
+title: FSU Special Collections and Archives Transcriptions
+email: 
+description: making collections out of TEI into HTML in the browser using CETEIcean
+github: https://github.com/FSUDRS/jekyllhide.git
+# url: "https://fsudrs.github.io"
+baseurl : "/sca" #change to github project name when it goes up on github pages
+
+collections:
+  herbals: 
+    output: true
+  correspondence: 
+    output: true
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
