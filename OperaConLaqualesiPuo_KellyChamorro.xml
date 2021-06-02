@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+     <front>
+        <p>
+           <lb/><hi rend="capital">Opera Di
+           <lb/><persName>Bartolomeo
+           <lb/>SCAPPI</persName>
+           <lb/>Mastro dell'arte del cucinare,</hi>
+           <lb/>con laquale si puo ammaestrare qualsi voglia cuoco,
+           <lb/>scalco, trinciante, o mastro di casa.
+           <lb/><hi rend="capital">DIVISA IN SEI LIBRI.</hi>
+           <lb/> <!-- there is a list here--> <!--Primo si intende il ragionamento che fa l'Autore con Giovanni suo discepolo. 
+           Secondo si tratta di diverse vivande di carne, si di quadrupedi come di volatili.
+           Terzo si parla della statura, e stagione ogni sorte di pesci.
+           Quarto si mostra le liste del presentar le vivande in tavola di grasso, &amp; magro.
+           quinto si contiene l'ordine di sar diverse sorti di paste, &amp; altri lavori.
+           seito si ragiona de'convalescenti, e molte altre sorte di vivande per gli infermi. 
+           -->
+           <lb/> <hi rend="italics">Con le figure che fanno dibisogno nella cucina.</hi>
+           <lb/>aggiontoui nuovamente il trinciante, &amp; il mastro di casa.
+        </p>
+        <div type="dedication">
+        <p> <hi rend="capital">Dedicate al Mag. M. <persName>Matteo Barbini</persName></hi>
+            <lb/>cuoco, e scalco celebrimo della citta di <placeName>Venetia.</placeName>
+        </p>
+        <p> <hi rend="capital">In venetia,</hi> per <persName>Alessandro de'Vecchi</persName>. MDC XXII. </p>
+        <pb/>
+        <p><hi rend="capital">Al Maginifico Sig.</hi>
+            <lb/>Patron mio osservandisimo
+           <lb/>il signor
+           <lb/><hi rend="capital"><persName>Matteo Barbini</persName></hi>
+        </p>
+           <p rend="italics"><hi rend="DIC">C</hi>ON l'occasione che m'e venuta per le ma- <!-- should the salute element go somewhere here? -->
+              <lb/>ni di ristampare l'Opera del signor
+              <lb/><persName>Bartolomeo Scappi</persName>, Opera tanto nel suo
+              <lb/>genere signolare, quanto de professori sin-
+              <lb/>golarmente, per non dire necessariamente ricercara,
+              <lb/>incontinente ho havuto l'animo, e stimai fosse ben fatto
+              <lb/>il dedicarla a V.S. ch'e si celebre, e si adoprata da
+              <lb/>grandi, cosi nell'arte del cuoco, come dello scalco, si
+              <lb/>che sopramodo ella a'nostri  giorni tiene il primo luogo
+              <lb/>cosi nel preparare le diversita de cibi, come del ban-
+              <lb/>deggiare le mense lauti con quella splendidezza, e
+              <lb/>decoro che' ne resulta in gloria de'Padroni, &amp; in
+              <lb/>applauso del su ingegno, accetti V.S. per aggradire al
+              <lb/>mio buon desiderio d'honorarla, il presente dono, e le
+              <lb/>baccio le mani. Di venetiali <date when="1622-03-12">12. Marzo 1622.</date>
+           </p>
+           <p rend="italics">Di V.S. Maginifica
+              <lb/>Affettionatissimo servitore
+              <lb/>Alessandro de'Vecchi.
+           </p>
+           <pb/> 
+           <p> <hi rend="capital">PIUS PAPA
+              <lb/>QUINTUS</hi> 
+           </p>
+           <p><hi rend="DIC">M</hi>OTU PROPRIO, &amp;c. Cum sicut accepimus delcti
+              <lb/>fili <!-- return to latin text here -->
+           </p>
+           <pb/>
+           <p><hi rend="capital">Lo </hi>
+              <lb/><hi rend="capital">stampatore</hi>
+              <lb/> Alll benigni Lettori.
+           </p>
+           <p><hi rend="DIC">L</hi>a inventione principale de'buoni auttori suol essere pro
+              <lb/>priamente nel comporre, e nel mandar in luce l'opere
+              <lb/>loro, o di giovare in quel che possono al publico con la
+              <lb/>buona dottrina, e con loro precetti salubri, ouero di di-
+              <lb/>lettare in qualche maniera il Lettore col soggeto che
+              <lb/>prendono, e con lo stile quando altramente no possono.
+              <lb/>Onde a me pare convenirsi meritamente a quelli l;intera gloria, &amp; il vero
+              <lb/>honore; i quali con sodisatione universale, con merauigita de gli huomi-
+              <lb/>no hanno saputo felicemente consequire l'uno, e l'altro de'sopradetti fini,
+              <lb/>si come a mio giudicio si puo co verita affermare esser avvenuto a <persName>M. Bar-
+              <lb/>tolomeo Scappi</persName>, Autore della presente opera havendo preso per suo sog-
+              <lb/>getto cosi necessaria materia alla salute de'corpi, e trattandola poi col mag
+              <lb/>gior artificio, ch'alcuno da gli antichi in qua habbia saputo fare, si come
+              <lb/>ogni persona di sano intelletto potra chiaramente comprendere dal me-
+              <lb/>todo dell'opera istessa, non meno utile, che diletteuole a tutti gli huomi-
+              <lb/>ni, che la vorrano leggere, e servirsene ne i bisogni della vita loro, e l'intel
+              <lb/>letto nostro apprende facilmente, le cose, e per consequentia fa profitto in
+              <lb/>quelle scienze, che dalla industria di prudente, &amp; essercitato Maestro gli
+              <lb/>vengono mostrare, &amp; insegnate; si debbe similmente credere che le rego-
+              <lb/>le, &amp; ammaestramenti di guesto eccellente auttore in quel'arte, habbiano
+              <lb/>a dilettare li sensi humani, &amp; a conservare, &amp; accrescere ancora la sanita
+              <lb/>perfetta ne i corpi nostri, sempre, che se vogliamo valere col debito tem-
+              <lb/>peramento, e col saggio discourse della ragione. Non bisogna dunque Si-
+              <lb/>gnori persuaderui con altro alla lettione di opera cosi degna, poi da se stes-
+              <lb/>sa vi mostra l'utilita grande, che dalla sua lettione conseguirete. 
+           </p>
+         </div> <!-- is the publisher/printer acknowledgement part of the dedication?  -->
+     </front>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
